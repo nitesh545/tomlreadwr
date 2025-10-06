@@ -290,7 +290,7 @@ Unless you explicitly state otherwise, any contribution intentionally submitted 
 
 ## Changelog
 
-### 0.1.0 (2025-01-XX)
+### 0.1.0 (2025-10-07)
 
 - Initial release
 - Basic TOML configuration management
