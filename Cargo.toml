@@ -1,15 +1,15 @@
 [package]
-authors       = [ "Your Name <your.email@example.com>" ]
+authors       = [ "Nitesh Sharma <nitesh.sharma5549@gmail.com>" ]
 categories    = [ "config", "encoding" ]
 description   = "A simple TOML configuration manager with nested key access and type-safe deserialization"
 documentation = "https://docs.rs/toml_config"
 edition       = "2024"
-homepage      = "https://github.com/yourusername/toml_config"
+homepage      = "https://github.com/nitesh545/tomlreadwr/blob/master/src/toml_config.rs"
 keywords      = [ "config", "configuration", "toml" ]
 license       = "MIT OR Apache-2.0"
 name          = "tomlreadwr"
 readme        = "README.md"
-repository    = "https://github.com/yourusername/toml_config"
+repository    = "https://github.com/nitesh545/tomlreadwr/blob/master/src/toml_config.rs"
 version       = "0.1.0"
 
 [dependencies]
