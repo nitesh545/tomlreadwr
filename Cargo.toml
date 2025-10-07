@@ -4,12 +4,12 @@ categories    = [ "config", "encoding" ]
 description   = "A simple TOML configuration manager with nested key access and type-safe deserialization"
 documentation = "https://docs.rs/toml_config"
 edition       = "2024"
-homepage      = "https://github.com/nitesh545/tomlreadwr/blob/master/src/toml_config.rs"
+homepage      = "https://github.com/nitesh545/tomlreadwr/blob/master/"
 keywords      = [ "config", "configuration", "toml" ]
 license       = "MIT OR Apache-2.0"
 name          = "tomlreadwr"
 readme        = "README.md"
-repository    = "https://github.com/nitesh545/tomlreadwr/blob/master/src/toml_config.rs"
+repository    = "https://github.com/nitesh545/tomlreadwr/blob/master/"
 version       = "0.1.0"
 
 [dependencies]

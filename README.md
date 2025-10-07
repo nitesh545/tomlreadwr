@@ -143,32 +143,6 @@ config
     .save()?;
 ```
 
-### Working with Complex Types
-
-```rust
-use serde::{Deserialize, Serialize};
-use toml_config::TomlConfig;
-
-#[derive(Deserialize, Serialize, Debug)]
-struct OpcuaConfig {
-    host: String,
-    namespace: u32,
-    enabled: bool,
-    node_variance: Vec<String>,
-}
-
-let mut config = TomlConfig::load("sources.conf")?;
-
-// Read complex type
-if let Some(opcua) = config.get_of_type::<OpcuaConfig>("sources.opcua_machine1") {
-    println!("OPCUA Config: {:#?}", opcua);
-}
-
-// Modify and save
-config.set("sources.opcua_machine1.enabled", false)?
-      .save()?;
-```
-
 ## API Documentation
 
 ### Core Methods
@@ -231,6 +205,7 @@ config.set("server.port", 8080)?
 ```
 
 Common errors:
+
 - **"Key cannot be empty"** - Empty key string provided
 - **"Path 'x' does not exist"** - Parent path doesn't exist (use `create` instead)
 - **"'x' is not a table"** - Trying to access nested keys on a non-table value
@@ -279,8 +254,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 Licensed under either of:
 
-- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
-- MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
+- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
+- MIT license ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 
 at your option.
 
